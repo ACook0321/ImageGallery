@@ -1,76 +1,114 @@
-.main-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+body {
   width: 100%;
-  max-width: 1024;
-  min-width: 320;
-  height: 100%;
+  height: auto;
+  max-width: 2400;
+  margin: 0;
+  padding: 0;
+  
   
 }
 
+.main-container{
+display: flex;
 
+flex-direction: row;
+flex-wrap: wrap;
+width: auto;
+height: auto;
 
-.middle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+}
+.image{
+  flex: 20%;
+  position: relative;
+  width: 50%;
   height: auto;
-  width: auto;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(0, 0, 0, 0.5);
+  margin: 1px;
+  
 }
 
-.image1:hover .middle {
-  opacity: 1;
-}
+ 
+  
+  .middle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .image:hover .middle {
+    opacity: .5;
+  }
+  
+  .quote {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 100;
+    font-family: 'Courgette', cursive;
+  }
+  
+  .image1{
+    height: 50%;
+  }
 
-.image2:hover .middle {
-  opacity: 1;
-}
-.image3:hover .middle {
-  opacity: 1;
-}
-.image4:hover .middle {
-  opacity: 1;
-}
-.image5:hover .middle {
-  opacity: 1;
-}
-.image6:hover .middle {
-  opacity: 1;
-}
-.image7:hover .middle {
-  opacity: 1;
-}
-.image8:hover .middle {
-  opacity: 1;
-}
-.image9:hover .middle {
-  opacity: 1;
-}
-.image10:hover .middle {
-  opacity: 1;
-}
-.image11:hover .middle {
-  opacity: 1;
-}
-.image12:hover .middle {
-  opacity: 1;
-}
+  .image2{
+    height: 80%;
+  }
+  
+  .image3{
 
+  }
 
-.quote {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+  .image4{
+
+  }
+
+  .image5{
+    
+  }
+
+  .image6{
+    
+  }
+
+  .image7{
+    height: 90%;
+    
+  }
+
+  .image8{
+    
+    
+  }
+
+  .image9{
+    height: 50%;
+    
+  }
+
+  .image10{
+    height: 90%;
+    
+  }
+
+  .image11{
+    height: 50%;
+    
+  }
+
+  .image12{
+    height: 50%;
+    
+  }
